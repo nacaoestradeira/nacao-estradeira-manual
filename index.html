@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAÇÃO ESTRADEIRA Moto Turismo - Manual</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #000; color: #fff; line-height: 1.6; }
+        header { background: linear-gradient(#333, #111); padding: 20px; text-align: center; }
+        .salve { font-size: 1.5em; color: #ff0; font-weight: bold; }
+        nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; background: #111; margin: 0; }
+        nav li { margin: 5px; }
+        nav button { background: #444; color: #fff; border: none; padding: 12px 18px; cursor: pointer; border-radius: 5px; transition: background 0.3s; }
+        nav button:hover { background: #666; }
+        nav button.active { background: #ff0; color: #000; }
+        .tabcontent { display: none; padding: 30px; max-width: 1200px; margin: auto; }
+        .tabcontent.active { display: block; }
+        h2 { color: #ff0; border-bottom: 2px solid #ff0; padding-bottom: 10px; }
+        img { max-width: 100%; height: auto; display: block; margin: 20px auto; border: 2px solid #fff; border-radius: 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #fff; padding: 10px; text-align: left; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; } .tabcontent { padding: 20px 10px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NAÇÃO ESTRADEIRA Moto Turismo</h1>
+        <div class="salve">SEGURANÇA • AMIZADE • LIBERDADE • VIAGENS • ENCONTROS</div>
+        <p>Manual do Proprietário - Queremos agradecer a sua presença...</p>
+    </header>
+    <nav>
+        <ul id="tabs">
+            <li><button onclick="openTab(event, 'inicio')" class="tablink active">01 Início/Fundação</button></li>
+            <li><button onclick="openTab(event, 'finalidade')">03 Finalidade</button></li>
+            <li><button onclick="openTab(event, 'salve')">09 S.A.L.V.E.</button></li>
+            <li><button onclick="openTab(event, 'hino')">10 Hino</button></li>
+            <li><button onclick="openTab(event, 'diretoria')">11 Diretoria</button></li>
+            <li><button onclick="openTab(event, 'exigencias')">07 Exigências</button></li>
+            <li><button onclick="openTab(event, 'comboio')">14/15 Comboio</button></li>
+            <li><button onclick="openTab(event, 'brasao')">17 Brasão</button></li>
+            <li><button onclick="openTab(event, 'colete')">20 Colete Layout</button></li>
+            <li><button onclick="openTab(event, 'fundadores')">22 Fundadores</button></li>
+        </ul>
+    </nav>
+
+    <div id="inicio" class="tabcontent active">
+        <h2>01 INÍCIO</h2>
+        <p>O NAÇÃO ESTRADEIRA Moto Turismo nasceu oficialmente em 13/08/2022 a partir do seu registro em cartório, mas a Ideia da formação deste grupo anterior e foi gestada pelo fundador 001, Johnny Falco... Isso nos leva ao ponto de convergência onde, um dos pré-requisitos para ingresso ao NAÇÃO ESTRADEIRA a atualização constante do piloto através de treinos práticos de pilotagem defensiva.[file:1]</p>
+        <p>Vida Longa NAÇÃO ESTRADEIRA MOTO TURISMO!!</p>
+        <img src="images/inicio.jpeg" alt="Fundação NE">
+    </div>
+
+    <div id="finalidade" class="tabcontent">
+        <h2>03 FINALIDADE</h2>
+        <p>A Associação de Motociclistas Nação Estradeira Moto Turismo... é uma associação civil sem fins lucrativos e tem como finalidade a promoção de uma pilotagem segura, responsável e técnica e que estimula a fraternidade e cooperação entre seus membros... promoção para seus integrantes de viagens turísticas e de lazer... prestação de serviços sociais e filantrópicos.[file:1]</p>
+    </div>
+
+    <div id="salve" class="tabcontent">
+        <h2>09 S.A.L.V.E.</h2>
+        <p>Este acrônimo foi criado no início da formação do NAÇÃO ESTRADEIRA por seus fundadores: S - SEGURANÇA, A - AMIZADE, L - LIBERDADE, V - VIAGENS, E - ENCONTROS.[file:1] O SALVE NAÇÃO vai além de um cumprimento entusiasta e forte, suas letras formam a nossa concepção do que ser um MOTO ESTRADEIRO de verdade.</p>
+    </div>
+
+    <div id="hino" class="tabcontent">
+        <h2>10 HINO</h2>
+        <p>SIM, temos um, criado pelo Fundador 001 Johnny, cantado por todos pela primeira vez no 1 A.N.E. em São Bento do Sul - SC... "Salve nação, Salve nação, Salve nação estradeira... Cidadão do mundo Nação estradeira...".[file:1]</p>
+    </div>
+
+    <div id="diretoria" class="tabcontent">
+        <h2>11 CARGOS DIRETORIA, FUNÇÕES e ELEIÇÃO</h2>
+        <table>
+            <tr><th>Cargo</th><th>Função</th></tr>
+            <tr><td>Presidente</td><td>Votação Direcionar NE</td></tr>
+            <tr><td>Vice-presidente</td><td>Administrar e substituir o Presidente</td></tr>
+            <tr><td>Secretária</td><td>Administrar socialmente NE</td></tr>
+            <tr><td>Diretor Administrativo</td><td>Administrar o financeiro NE</td></tr>
+            <tr><td>Comissão de Ética</td><td>Análise de admissão de novos membros</td></tr>
+            <tr><td>Diretor de Curso</td><td>Promover a prática de cursos</td></tr>
+            <tr><td>Diretor de Filantropia</td><td>Análise de pedidos de ajuda</td></tr>[file:1]
+        </table>
+        <p>Diretoria provida de ELEIÇÃO a cada 2 anos.</p>
+    </div>
+
+    <div id="exigencias" class="tabcontent">
+        <h2>07 NOSSAS EXIGÊNCIAS: SOCIAL, COLETE, TREINAMENTO</h2>
+        <p>O NAÇÃO ESTRADEIRA na parte SOCIAL, não terá cunho político ou partidário... Use o COLETE com respeito e dignidade... Buscando aprimoramento contínuo de seus integrantes... participação em cursos de pilotagem.[file:1]</p>
+    </div>
+
+    <div id="comboio" class="tabcontent">
+        <h2>14 COMBOIO, 15 SINAIS</h2>
+        <p>Regras de comportamento e organização de deslocamento de cada integrante e líder de COMBOIO... Sinais do motociclismo quando em trânsito de COMBOIO. Este procedimento está registrado em nosso ESTATUTO.[file:1]</p>
+    </div>
+
+    <div id="brasao" class="tabcontent">
+        <h2>17 BRASÃO</h2>
+        <p>Cada detalhe no nosso BRASÃO foi adicionado com um significado... Círculo preto (Rodar pelo mundo), Asas douradas (Livre para rodar), Estrelas vermelhas (Dois cursos de pilotagens: AP e MM).[file:1]</p>
+        <img src="images/brasao.jpeg" alt="Brasão NE">
+    </div>
+
+    <div id="colete" class="tabcontent">
+        <h2>20 COLETE LAYOUT PADRÃO OBRIGATÓRIO</h2>
+        <p>Layout padrão com PATCH OFICIAL obrigatório: Brasão pequeno (peito frente), Brasão grande (costas), Patches de conquista facultativos.[file:1]</p>
+        <img src="images/colete-layout.jpeg" alt="Colete Layout">
+    </div>
+
+    <div id="fundadores" class="tabcontent">
+        <h2>22 FUNDADORES</h2>
+        <p>001 - JOHNNY - SP, 002 - EDUARDO VARELA - ARG, 003 - CELSIUS - SP, 004 - PAULO GIATTI - SP, 005 - CARLOS BARROS - SP, ..., 015 - RICARDO ESTRELA - GO, ..., até 068+.[file:1] Beneméritos: BEN.001 BIFFI, etc.</p>
+        <img src="images/fundadores.jpg" alt="Fotos Fundadores">
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) { tabcontent[i].classList.remove("active"); }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) { tablinks[i].classList.remove("active"); }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
