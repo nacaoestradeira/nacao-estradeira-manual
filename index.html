@@ -356,18 +356,22 @@ MOTO CLUBE tem como premissa encontros, reuniões e MOTO TURISMO tem como foco p
 
     <script>
     function openTab(evt, tabName) {
-        // Remove de todos contents
         document.querySelectorAll('.tabcontent').forEach(function(el) {
             el.classList.remove('active');
         });
-        // Remove de todos buttons
         document.querySelectorAll('.tablink').forEach(function(el) {
             el.classList.remove('active');
         });
-        // Ativa clicado
         document.getElementById(tabName).classList.add('active');
         evt.currentTarget.classList.add('active');
     }
+
+        // Inicializa 1º tab ao carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('inicio').classList.add('active');
+            document.querySelector('.tablink').classList.add('active');
+    });
     </script>
+    
 </body>
 </html>
